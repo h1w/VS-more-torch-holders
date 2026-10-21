@@ -40,7 +40,17 @@ From the repository root:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
-Produces `dist/moretorchholders_1.0.2.zip` containing only `modinfo.json` and `assets/`. The script checks JSON parsing and uses deterministic ZIP entry timestamps. No .NET SDK or game files are needed to package the content mod.
+Produces `dist/moretorchholders_1.0.2.zip` containing `modinfo.json`, `LICENSE` and `assets/`. The script checks JSON parsing and uses deterministic ZIP entry timestamps. No .NET SDK or game files are needed to package the content mod.
+
+### GitHub Actions
+
+Main pushes, pull requests and manual runs build a versioned ZIP artifact using `modinfo.json` as the version source. Pushing a tag such as `v1.0.2` also publishes a GitHub Release with that verified ZIP. A tag that does not match `modinfo.json` fails before publication. Artifacts use stable versioned names so a release-job rerun can reuse the completed build.
+
+For a new release, update `modinfo.json` and `CHANGELOG.md`, merge the changes into `main`, then push a matching `v<major.minor.patch>` tag. Do not reuse an existing version for changed gameplay/content.
+
+## License and credits
+
+Author-owned mod files are licensed under [MIT](LICENSE), copyright 2026 h1w. Referenced Vintage Story models/textures remain the property of Anego Studios and are not included in the ZIP. Built with assistance from OpenAI GPT-6.1 via oh-my-pi; translations are AI-assisted and corrections are welcome.
 
 ## Размещение и крафт
 
@@ -73,6 +83,6 @@ The initial 1.0.0 mechanics checks below used the actual **1.22.7** dedicated se
 - In-game close-up: silver holder directly alongside silver lantern, plus adjacent copper examples. No guessed brass recoloring remains.
 - The actual game language loader resolved all **1,224 entries across 34 locales**, including wildcard block names and descriptions.
 - File coverage matches all 33 menu languages plus the installed Romanian translation file. Every locale contains all 36 mod keys.
-- Final archive: **39 files**, valid JSON and CRCs, 34 locale files and one original alpha-cutout mask. No copied vanilla textures, test assemblies or RGB tint images.
+- Final licensed archive: **40 files**, valid JSON and CRCs, 34 locale files, one original alpha-cutout mask and `LICENSE`. No copied vanilla textures, test assemblies or RGB tint images.
 
 Actual trader transactions, separate-client dedicated-server interaction and compatibility with third-party mods have not been verified.

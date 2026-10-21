@@ -8,7 +8,7 @@ $stream = [IO.File]::Open($target, [IO.FileMode]::Create)
 try {
     $zip = [IO.Compression.ZipArchive]::new($stream, [IO.Compression.ZipArchiveMode]::Create)
     try {
-        $files = @((Get-Item -LiteralPath (Join-Path $PSScriptRoot 'modinfo.json'))) + @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'assets') -File -Recurse)
+        $files = @((Get-Item -LiteralPath (Join-Path $PSScriptRoot 'modinfo.json')), (Get-Item -LiteralPath (Join-Path $PSScriptRoot 'LICENSE'))) + @(Get-ChildItem -LiteralPath (Join-Path $PSScriptRoot 'assets') -File -Recurse)
         foreach ($file in ($files | Sort-Object FullName)) {
             $relative = $file.FullName.Substring($PSScriptRoot.Length + 1).Replace('\', '/')
             if ($file.Extension -eq '.json') {

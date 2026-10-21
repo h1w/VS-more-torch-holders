@@ -1,0 +1,90 @@
+name: Build and release mod
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.package.outputs.version }}
+      filename: ${{ steps.package.outputs.filename }}
+      artifact: ${{ steps.package.outputs.artifact }}
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Validate version and build ZIP
+        id: package
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $info = Get-Content ./modinfo.json -Raw -Encoding utf8 | ConvertFrom-Json
+          if ($info.version -notmatch '^\d+\.\d+\.\d+$') {
+            throw "modinfo.json must contain a major.minor.patch version"
+          }
+          if ($env:GITHUB_REF_TYPE -eq 'tag' -and $env:GITHUB_REF_NAME -ne "v$($info.version)") {
+            throw "Tag $env:GITHUB_REF_NAME does not match mod version $($info.version)"
+          }
+          ./build.ps1
+          $filename = "$($info.modid)_$($info.version).zip"
+          "version=$($info.version)" >> $env:GITHUB_OUTPUT
+          "filename=$filename" >> $env:GITHUB_OUTPUT
+          "artifact=$($info.modid)_$($info.version)" >> $env:GITHUB_OUTPUT
+      - name: Verify release contents
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          $info = Get-Content ./modinfo.json -Raw -Encoding utf8 | ConvertFrom-Json
+          $zip = [IO.Compression.ZipFile]::OpenRead((Join-Path ./dist "$($info.modid)_$($info.version).zip"))
+          try {
+            $names = @($zip.Entries.FullName)
+            foreach ($required in @('modinfo.json', 'LICENSE')) {
+              if ($required -notin $names) { throw "Missing archive entry: $required" }
+            }
+            foreach ($entry in $zip.Entries) {
+              if ($entry.FullName -notin @('modinfo.json', 'LICENSE') -and -not $entry.FullName.StartsWith('assets/')) {
+                throw "Unexpected archive entry: $($entry.FullName)"
+              }
+              if ($entry.FullName.EndsWith('.json')) {
+                $reader = [IO.StreamReader]::new($entry.Open())
+                try { $reader.ReadToEnd() | ConvertFrom-Json | Out-Null } finally { $reader.Dispose() }
+              }
+            }
+          } finally { $zip.Dispose() }
+      - name: Upload versioned ZIP
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ${{ steps.package.outputs.artifact }}
+          path: dist/${{ steps.package.outputs.filename }}
+          if-no-files-found: error
+
+  release:
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download verified ZIP
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: ${{ needs.build.outputs.artifact }}
+          path: dist
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          RELEASE_VERSION: ${{ needs.build.outputs.version }}
+          RELEASE_FILE: ${{ needs.build.outputs.filename }}
+        run: |
+          gh release create "$RELEASE_TAG" "dist/$RELEASE_FILE" \
+            --verify-tag --title "VS More Torch Holders $RELEASE_VERSION" --generate-notes

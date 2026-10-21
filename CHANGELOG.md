@@ -6,6 +6,8 @@
 - Preserve holder openwork with one alpha-only cutout; source texture RGB is unchanged.
 - Add complete holder names, empty names and descriptions for all 33 selectable game languages and installed Romanian: 34 locales, 1,224 entries.
 - Keep mod ID, block codes, shapes, recipes, trading and gameplay unchanged.
+- License author-owned files under MIT and include the license in release archives.
+- Add GitHub Actions versioned ZIP builds and matching-tag GitHub Releases.
 
 ## 1.0.1 — 2026-10-21
 
