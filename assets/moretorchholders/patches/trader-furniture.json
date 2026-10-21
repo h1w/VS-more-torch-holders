@@ -1,0 +1,218 @@
+[
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-copper-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-tinbronze-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-bismuthbronze-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-blackbronze-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-iron-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-meteoriciron-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-steel-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-bismuth-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-molybdochalkos-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-silver-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-gold-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  },
+  {
+    "op": "add",
+    "file": "game:config/tradelists/trader-furniture.json",
+    "path": "/selling/list/-",
+    "value": {
+      "code": "game:torchholder-electrum-empty-north",
+      "type": "block",
+      "stacksize": 1,
+      "stock": {
+        "avg": 2,
+        "var": 0.5
+      },
+      "price": {
+        "avg": 12,
+        "var": 3
+      }
+    }
+  }
+]

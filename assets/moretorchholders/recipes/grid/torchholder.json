@@ -1,0 +1,32 @@
+{
+  "ingredientPattern": "I,I",
+  "ingredients": {
+    "I": {
+      "type": "item",
+      "code": "game:metalplate-{metal}"
+    }
+  },
+  "allowedVariants": {
+    "metal": [
+      "copper",
+      "tinbronze",
+      "bismuthbronze",
+      "blackbronze",
+      "iron",
+      "meteoriciron",
+      "steel",
+      "bismuth",
+      "molybdochalkos",
+      "silver",
+      "gold",
+      "electrum"
+    ]
+  },
+  "width": 1,
+  "height": 2,
+  "output": {
+    "type": "block",
+    "code": "game:torchholder-{metal}-empty-north",
+    "quantity": 2
+  }
+}

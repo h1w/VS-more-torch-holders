@@ -1,0 +1,218 @@
+[
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "copper"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "tinbronze"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "bismuthbronze"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "blackbronze"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "iron"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "meteoriciron"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "steel"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "bismuth"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "molybdochalkos"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "silver"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "gold"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/variantgroups/0/states/-",
+    "value": "electrum"
+  },
+  {
+    "op": "add",
+    "file": "game:blocktypes/metal/torchholder.json",
+    "path": "/texturesByType",
+    "value": {
+      "torchholder-copper-*": {
+        "material": {
+          "base": "game:block/metal/lantern/copper",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-tinbronze-*": {
+        "material": {
+          "base": "game:block/metal/lantern/tinbronze",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-bismuthbronze-*": {
+        "material": {
+          "base": "game:block/metal/lantern/bismuthbronze",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-blackbronze-*": {
+        "material": {
+          "base": "game:block/metal/lantern/blackbronze",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-iron-*": {
+        "material": {
+          "base": "game:block/metal/lantern/iron",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-meteoriciron-*": {
+        "material": {
+          "base": "game:block/metal/lantern/meteoriciron",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-steel-*": {
+        "material": {
+          "base": "game:block/metal/lantern/steel",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-bismuth-*": {
+        "material": {
+          "base": "game:block/metal/lantern/bismuth",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-molybdochalkos-*": {
+        "material": {
+          "base": "game:block/metal/lantern/molybdochalkos",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-silver-*": {
+        "material": {
+          "base": "game:block/metal/lantern/silver",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-gold-*": {
+        "material": {
+          "base": "game:block/metal/lantern/gold",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "torchholder-electrum-*": {
+        "material": {
+          "base": "game:block/metal/lantern/electrum",
+          "blendedOverlays": [
+            {
+              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "blendMode": "OverlayCutout"
+            }
+          ]
+        }
+      },
+      "*": {
+        "material": {
+          "base": "game:block/metal/torchholder/{material}"
+        }
+      }
+    }
+  }
+]

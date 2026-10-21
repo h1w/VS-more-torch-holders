@@ -1,0 +1,23 @@
+/dist/
+
+# Local builds and development profiles
+/bin/
+/obj/
+/.lab*/
+/.worktrees/
+
+# Editor and OS files
+/.vs/
+/.idea/
+*.user
+*.suo
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# Local credentials and logs
+.env
+.env.*
+!.env.example
+*.log
