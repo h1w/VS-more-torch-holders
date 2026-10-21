@@ -2,6 +2,8 @@
 
 Content-only mod for **Vintage Story 1.22.7**. Adds the missing metal variants of the vanilla wall-mounted **torch holder**. These hold torches, not lanterns.
 
+[Mod DB](https://mods.vintagestory.at/vsmoretorchholders) · [GitHub Releases](https://github.com/h1w/VS-more-torch-holders/releases)
+
 ## Materials
 
 Copper, tin bronze, bismuth bronze, black bronze, iron, meteoric iron, steel, bismuth, molybdochalkos, silver, gold and electrum. The existing brass, aged and ruined holders are left in place.
