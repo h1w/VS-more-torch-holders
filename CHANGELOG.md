@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3 — 2026-10-21
+
+- Assign unique public mod ID and asset domain `vsmoretorchholders`; `moretorchholders` belongs to an unrelated mod on Mod DB.
+- Preserve all vanilla-domain holder block codes, recipes and mechanics. Replace development ZIPs rather than installing both IDs.
+
 ## 1.0.2 — 2026-10-21
 
 - Use each corresponding vanilla lantern metal texture directly, including silver. Remove all guessed colors, brass neutralization and RGB overlays.

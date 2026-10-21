@@ -1,12 +1,12 @@
 {
   "type": "content",
-  "modid": "moretorchholders",
+  "modid": "vsmoretorchholders",
   "name": "VS More Torch Holders",
   "description": "Completes the vanilla torch holder range with 12 metals, matching recipes and furniture trader offers. No gameplay changes.",
   "authors": [
     "h1w"
   ],
-  "version": "1.0.2",
+  "version": "1.0.3",
   "side": "Universal",
   "requiredOnClient": true,
   "requiredOnServer": true,

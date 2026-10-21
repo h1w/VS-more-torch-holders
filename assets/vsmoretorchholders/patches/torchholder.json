@@ -81,7 +81,7 @@
           "base": "game:block/metal/lantern/copper",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -92,7 +92,7 @@
           "base": "game:block/metal/lantern/tinbronze",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -103,7 +103,7 @@
           "base": "game:block/metal/lantern/bismuthbronze",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -114,7 +114,7 @@
           "base": "game:block/metal/lantern/blackbronze",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -125,7 +125,7 @@
           "base": "game:block/metal/lantern/iron",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -136,7 +136,7 @@
           "base": "game:block/metal/lantern/meteoriciron",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -147,7 +147,7 @@
           "base": "game:block/metal/lantern/steel",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -158,7 +158,7 @@
           "base": "game:block/metal/lantern/bismuth",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -169,7 +169,7 @@
           "base": "game:block/metal/lantern/molybdochalkos",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -180,7 +180,7 @@
           "base": "game:block/metal/lantern/silver",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -191,7 +191,7 @@
           "base": "game:block/metal/lantern/gold",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]
@@ -202,7 +202,7 @@
           "base": "game:block/metal/lantern/electrum",
           "blendedOverlays": [
             {
-              "base": "moretorchholders:block/metal/torchholder/cutout",
+              "base": "vsmoretorchholders:block/metal/torchholder/cutout",
               "blendMode": "OverlayCutout"
             }
           ]

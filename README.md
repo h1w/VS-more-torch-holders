@@ -25,7 +25,7 @@ All 33 languages selectable in Vintage Story 1.22.7, plus the installed Romanian
 ## Install
 
 1. Back up the world before adding or removing content mods.
-2. Remove the previous `moretorchholders` ZIP, then copy `moretorchholders_1.0.2.zip` from `dist/` into your Vintage Story data directory's `Mods` folder. Do not extract it or keep two versions installed.
+2. Remove previous ZIPs of this project (`moretorchholders_*.zip` from the development builds), then copy `vsmoretorchholders_1.0.3.zip` from `dist/` into your Vintage Story data directory's `Mods` folder. Do not extract it or keep two versions installed. The public mod ID is `vsmoretorchholders`; do not install alongside the unrelated `moretorchholders` mod, which modifies the same vanilla variants.
 3. Restart the game. Multiplayer requires the mod on the server and clients.
 
 Windows default user mod directory: `%APPDATA%\VintagestoryData\Mods`.
@@ -40,11 +40,11 @@ From the repository root:
 powershell -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
-Produces `dist/moretorchholders_1.0.2.zip` containing `modinfo.json`, `LICENSE` and `assets/`. The script checks JSON parsing and uses deterministic ZIP entry timestamps. No .NET SDK or game files are needed to package the content mod.
+Produces `dist/vsmoretorchholders_1.0.3.zip` containing `modinfo.json`, `LICENSE` and `assets/`. The script checks JSON parsing and uses deterministic ZIP entry timestamps. No .NET SDK or game files are needed to package the content mod.
 
 ### GitHub Actions
 
-Main pushes, pull requests and manual runs build a versioned ZIP artifact using `modinfo.json` as the version source. Pushing a tag such as `v1.0.2` also publishes a GitHub Release with that verified ZIP. A tag that does not match `modinfo.json` fails before publication. Artifacts use stable versioned names so a release-job rerun can reuse the completed build.
+Main pushes, pull requests and manual runs build a versioned ZIP artifact using `modinfo.json` as the version source. Pushing a tag such as `v1.0.3` also publishes a GitHub Release with that verified ZIP. A tag that does not match `modinfo.json` fails before publication. Artifacts use stable versioned names so a release-job rerun can reuse the completed build.
 
 For a new release, update `modinfo.json` and `CHANGELOG.md`, merge the changes into `main`, then push a matching `v<major.minor.patch>` tag. Do not reuse an existing version for changed gameplay/content.
 
