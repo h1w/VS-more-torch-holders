@@ -50,7 +50,7 @@ For a new release, update `modinfo.json` and `CHANGELOG.md`, merge the changes i
 
 ## License and credits
 
-Author-owned mod files are licensed under [MIT](LICENSE), copyright 2026 h1w. Referenced Vintage Story models/textures remain the property of Anego Studios and are not included in the ZIP. Built with assistance from OpenAI GPT-6.1 via oh-my-pi; translations are AI-assisted and corrections are welcome.
+Author-owned mod files are licensed under [MIT](LICENSE), copyright 2026 h1w. Referenced Vintage Story models/textures remain the property of Anego Studios and are not included in the ZIP.
 
 ## Размещение и крафт
 
